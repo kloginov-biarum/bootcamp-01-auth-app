@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tester Login</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Simple login demo for testers with intentional bugs.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🐉</text></svg>">
+</head>
+<body>
+  <main class="page">
+    <h1 class="app-title">Login</h1>
+
+    <form id="loginForm" class="login-form" autocomplete="off">
+      <img class="illustration" src="./assets/dragon-thinking.png" onerror="this.onerror=null;this.src='./assets/dragon-thinking.svg'" alt="Thinking dragon illustration">
+      <div class="field">
+        <label for="languageSelect">Language</label>
+        <select id="languageSelect" name="language">
+          <option value="en" selected>English</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" placeholder="Username" required>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="Password" required>
+      </div>
+
+      <button id="loginButton" type="submit" class="login-button">Login</button>
+
+      <p class="credentials-note">Valid username: <code>test_user</code>, valid password: <code>"pass122573"</code></p>
+      <p id="errorMessage" class="error-message" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <script src="./app.js"></script>
+  <noscript>This app requires JavaScript enabled.</noscript>
+</body>
+</html>
+
+
