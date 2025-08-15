@@ -21,3 +21,7 @@ Valid credentials (shown on page):
 Assets:
 - Put PNGs in `assets/dragon-thinking.png` and `assets/dragon-celebrate.png` (optional).
 
+Deploys:
+- GitHub Pages: the site is deployed automatically from `main` via Actions.
+- URL (after first run): `https://kloginov-biarum.github.io/bootcamp-01-auth-app/`
+
